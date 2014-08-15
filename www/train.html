@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Train Status Sweden</title>
+    <link rel="shortcut icon" href="Content/favicon.ico">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <link rel="stylesheet" href="Content/jquery.mobile-1.4.3.min.css">
+    <link rel="stylesheet" href="Content/site.css">
+    <script src="js/json2.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jstorage.js"></script>
+    <script src="js/jquery.mobile-1.4.3.min.js"></script>
+    <script src="js/site.js?1=2"></script>
+    <script src="js/site-train.js?1=2"></script>
+</head>
+<body>
+  <div data-role="page" id="trainPage" data-add-back-btn="true">
+    <div data-role="header">
+      <h1>Train Status Sweden</h1>
+      <a href="index.html" data-icon="search" data-iconpos="notext" rel="external" class="ui-btn-right">Sök</a>
+    </div>
+    
+    <div role="main" class="ui-content">
+        <!--<h3 id="trainName"></h3>-->
+        <ul data-role="listview" class="ui-listview-outer" data-inset="true" id="trainInfoList" class="myListviews"></ul>
+    </div>
+    <div data-role="footer">
+      <div data-role="navbar">
+          <ul>
+              <li><a href="JavaScript:UpdateTrainInfo();" data-icon="refresh">Uppdatera</a></li>
+          </ul>
+      </div><!-- /navbar -->
+    </div><!-- /footer -->
+  </div>
+</body>
+</html>
